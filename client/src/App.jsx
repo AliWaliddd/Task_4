@@ -43,10 +43,10 @@ export default function App() {
         <Route path="/perks/new" element={
           <ProtectedRoute><PerkForm /></ProtectedRoute>
         } />
-        <Route path="/perks/:id/view" element={
+        <Route path="/perks/:perkId/view" element={
           <ProtectedRoute><PerkDetails /></ProtectedRoute>
         } />
-        <Route path="/perks/:id" element={
+        <Route path="/perks/:perkId" element={
           <ProtectedRoute><PerkForm /></ProtectedRoute>
         } />
         <Route path="*" element={<div>Not Found</div>} />

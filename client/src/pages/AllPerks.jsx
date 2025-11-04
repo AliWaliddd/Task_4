@@ -234,7 +234,7 @@ export default function AllPerks() {
         */}
         {perks.map(perk => (
           
-          <Link
+          <Link to={`/perks/${perk._id}/view`}
             key={perk._id}
            
             className="card hover:shadow-lg transition-shadow cursor-pointer"
